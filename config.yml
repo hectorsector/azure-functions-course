@@ -2,7 +2,7 @@ title: 'BitCamp: Creating a Song Recommendation Engine with Azure'
 description: (Add Description Here)
 template:
   name: azure-functions-template
-  repo: azure-functions
+  repo: azure-functions-course
 before:
   - type: createPullRequest
     title: 'Week 0: Welcome to BitCamp!'
