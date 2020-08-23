@@ -1,7 +1,7 @@
 title: 'BitCamp: Creating a Song Recommendation Engine with Azure'
 description: (Add Description Here)
 template:
-  name: azure-functions
+  name: bit-camp-learning-lab
   repo: azure-functions-template
 before:
   - type: createPullRequest
@@ -191,25 +191,7 @@ steps:
         title: 'Week 4: Event Listener (Final Step)'
         body: eventlistener.md
         head: week-four
-        
 tags:
   - Azure
   - Spotify API
   - Bit Project
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
