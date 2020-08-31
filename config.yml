@@ -2,7 +2,7 @@ title: 'BitCamp: Creating a Song Recommendation Engine with Azure'
 description: (Add Description Here)
 template:
   name: bit-camp-learning-lab
-  repo: azure-functions-template
+  repo: azure-functions-course
 before:
   - type: createPullRequest
     head: bitazure
