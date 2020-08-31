@@ -11,7 +11,7 @@ before:
   - type: updateBranchProtection
     enforce_admins: false
     required_pull_request_reviews:
-      include_admins: false
+      include_admins: true
 steps:
   - title: 'Week 0: Fundamentals of JavaScript'
     description: (Add Description Here)
