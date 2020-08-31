@@ -2,10 +2,10 @@ title: 'BitCamp: Creating a Song Recommendation Engine with Azure'
 description: (Add Description Here)
 template:
   name: bit-camp-learning-lab
-  repo: azure-functions-course
+  repo: azure-functions-template
 before:
   - type: createPullRequest
-    head: master
+    head: bitcamp
     title: 'Week 0: Fundamentals of JavaScript'
     body: prerequisite.md
   - type: updateBranchProtection
