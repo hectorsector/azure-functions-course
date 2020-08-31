@@ -5,13 +5,9 @@ template:
   repo: azure-functions-template
 before:
   - type: createPullRequest
-    title: 'Week 0: Welcome to BitCamp!'
-    body: new_issue.md
-    head: week-zero
+    title: BitCamp: Azure & Spotify API
+    body: new-issue.md
   - type: updateBranchProtection
-    enforce_admins: false
-    required_pull_request_reviews:
-      include_admins: true
 steps:
   - title: 'Week 0: Fundamentals of JavaScript'
     description: (Add Description Here)
@@ -22,175 +18,163 @@ steps:
         with: prerequisite.md
   - title: 'Week 0: Creating an Analog Clock'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 0: Creating an Analog Clock'
         body: prerequisite.md
-        head: week-zero
   - title: 'Week 1: Downloading an IDE'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         body: ide.md
-        head: week-one
         title: 'Week 1: Downloading an IDE'
   - title: 'Week 1: Configuring Azure Functions'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 1: Configuring Azure Functions'
         body: azure.md
-        head: week-one
+d
   - title: 'Week 1: Learning to Use Github'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 1: Learning to Use Github'
         body: github.md
-        head: week-one
+d
   - title: 'Week 2: Parsing Multipart Data'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 2: Parsing Multipart Data'
         body: github.md
-        head: week-two
+d
   - title: 'Week 2: Creating a Face API Endpoint'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 2: Creating a Face API Endpoint'
         body: endpoint.md
-        head: week-two
+d
   - title: 'Week 2: Calling Face API (Parameters)'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 2: Calling Face API (Parameters)'
         body: params.md
-        head: week-two
+d
   - title: 'Week 2: Calling Face API (Fetch)'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 2: Calling Face API (Fetch)'
         body: fetch.md
-        head: week-two
+d
   - title: 'Week 2: Installing Dependencies'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 2: Installing Dependencies'
         body: dependencies.md
-        head: week-two
+d
   - title: 'Week 3: Creating an HTML Page'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 3: Creating an HTML Page'
         body: html.md
-        head: week-three
   - title: 'Week 3: Displaying Emotion Data'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 3: Displaying Emotion Data'
         body: data.md
-        head: week-three
   - title: 'Week 4: Creating a Web App'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 4: Creating a Web App'
         body: app.md
-        head: week-four
   - title: 'Week 4: Making an API Controller'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 4: Making an API Controller'
         body: apicontroller.md
-        head: week-four
   - title: 'Week 4: Recommendation Parameters'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 4: Recommendation Parameters'
         body: recparams.md
-        head: week-four
   - title: 'Week 4: Recommendation Call (GET)'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 4: Recommendation Call (GET)'
         body: reccall.md
-        head: week-four
   - title: 'Week 4: Return Method (API Controller)'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 4: Return Method (API Controller)'
         body: return.md
-        head: week-four
   - title: 'Week 4: UI Controller'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 4: UI Controller'
         body: uicontroller.md
-        head: week-four
   - title: 'Week 4: App Controller'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 4: App Controller'
         body: appcontroller.md
-        head: week-four
   - title: 'Week 4: Event Listener (Final Step)'
     description: (Add Description Here)
-    event: pull_request.closed
+    event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
-      - type: createPullRequest
+      - type: respond
         title: 'Week 4: Event Listener (Final Step)'
         body: eventlistener.md
-        head: week-four
 tags:
   - Azure
   - Spotify API
