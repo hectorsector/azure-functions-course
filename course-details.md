@@ -1,4 +1,4 @@
-This is the description we show on the course page [here](https://lab.github.com/Bahburs/azure-functions). This first paragraph will be featured at the top of the page so make it great.
+This is the description we show on the course page [here](https://lab.github.com/Bahburs/bit-test-1). This first paragraph will be featured at the top of the page so make it great.
 ​
 
 ​
