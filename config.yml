@@ -5,176 +5,137 @@ template:
   repo: azure-functions-template
 before:
   - type: createPullRequest
-    title: BitCamp: Azure & Spotify API
-    body: new-issue.md
+    head: bitazure
+    title: 'Week 0: Fundamentals of JavaScript'
+    body: prerequisite.md
   - type: updateBranchProtection
 steps:
-  - title: 'Week 0: Fundamentals of JavaScript'
-    description: (Add Description Here)
-    event: issue_comment.created
-    link: '{{ repoUrl }}/pull/1'
-    actions:
-      - type: respond
-        with: prerequisite.md
-  - title: 'Week 0: Creating an Analog Clock'
-    description: (Add Description Here)
-    event: issue_comment.created
-    link: '{{ repoUrl }}/pull/1'
-    actions:
-      - type: respond
-        title: 'Week 0: Creating an Analog Clock'
-        body: prerequisite.md
   - title: 'Week 1: Downloading an IDE'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        body: ide.md
-        title: 'Week 1: Downloading an IDE'
+        with: ide.md
   - title: 'Week 1: Configuring Azure Functions'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 1: Configuring Azure Functions'
-        body: azure.md
-d
+        with: azure.md
   - title: 'Week 1: Learning to Use Github'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 1: Learning to Use Github'
-        body: github.md
-d
+        with: github.md
   - title: 'Week 2: Parsing Multipart Data'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 2: Parsing Multipart Data'
-        body: github.md
-d
+        with: github.md
   - title: 'Week 2: Creating a Face API Endpoint'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 2: Creating a Face API Endpoint'
-        body: endpoint.md
-d
+        with: endpoint.md      
   - title: 'Week 2: Calling Face API (Parameters)'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 2: Calling Face API (Parameters)'
-        body: params.md
-d
+        with: params.md      
   - title: 'Week 2: Calling Face API (Fetch)'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 2: Calling Face API (Fetch)'
-        body: fetch.md
-d
+        with: fetch.md
   - title: 'Week 2: Installing Dependencies'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 2: Installing Dependencies'
-        body: dependencies.md
-d
+        with: dependencies.md
   - title: 'Week 3: Creating an HTML Page'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 3: Creating an HTML Page'
-        body: html.md
+        with: html.md
   - title: 'Week 3: Displaying Emotion Data'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 3: Displaying Emotion Data'
-        body: data.md
+        with: data.md
   - title: 'Week 4: Creating a Web App'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 4: Creating a Web App'
-        body: app.md
+        with: app.md
   - title: 'Week 4: Making an API Controller'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 4: Making an API Controller'
-        body: apicontroller.md
+        with: apicontroller.md
   - title: 'Week 4: Recommendation Parameters'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 4: Recommendation Parameters'
-        body: recparams.md
+        with: recparams.md
   - title: 'Week 4: Recommendation Call (GET)'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 4: Recommendation Call (GET)'
-        body: reccall.md
+        with: reccall.md
   - title: 'Week 4: Return Method (API Controller)'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 4: Return Method (API Controller)'
-        body: return.md
+        with: return.md
   - title: 'Week 4: UI Controller'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 4: UI Controller'
-        body: uicontroller.md
+        with: uicontroller.md
   - title: 'Week 4: App Controller'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 4: App Controller'
-        body: appcontroller.md
+        with: appcontroller.md
   - title: 'Week 4: Event Listener (Final Step)'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        title: 'Week 4: Event Listener (Final Step)'
-        body: eventlistener.md
+        with: eventlistener.md
 tags:
   - Azure
   - Spotify API
