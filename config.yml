@@ -2,7 +2,7 @@ title: 'BitCamp: Creating a Song Recommendation Engine with Azure'
 description: (Add Description Here)
 template:
   name: bit-camp-learning-lab
-  repo: azure-functions-template
+  repo: azure-functions-course
 before:
   - type: createPullRequest
     head: bitazure
@@ -44,14 +44,14 @@ steps:
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        with: endpoint.md      
+        with: endpoint.md
   - title: 'Week 2: Calling Face API (Parameters)'
     description: (Add Description Here)
     event: issue_comment.created
     link: '{{ repoUrl }}/pull/1'
     actions:
       - type: respond
-        with: params.md      
+        with: params.md
   - title: 'Week 2: Calling Face API (Fetch)'
     description: (Add Description Here)
     event: issue_comment.created
